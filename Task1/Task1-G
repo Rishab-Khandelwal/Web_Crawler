@@ -1,0 +1,37 @@
+The results obtained by the two crawls are the following : 
+
+8 Urls from both and DFS and BFS overlap.Therefore out of the 1000 URL's only 8 URL's overlapped.This is because of the 
+The first two URL's overlap for both of them :
+https://en.wikipedia.org/wiki/Solar_eclipse
+https://en.wikipedia.org/wiki/Eclipse_of_the_Sun_(film)
+
+The percieved quality of URL's obtained from BFS are better than the percieved quality of URL's obtained from DFS.
+If we see the first 10 URL's of the BFS :
+
+https://en.wikipedia.org/wiki/Solar_eclipse
+https://en.wikipedia.org/wiki/Eclipse_of_the_Sun_(film)
+https://en.wikipedia.org/wiki/Eclipse_of_the_Sun_(novel)
+https://en.wikipedia.org/wiki/Solar_eclipse_of_August_11,_1999
+https://en.wikipedia.org/wiki/Solar_prominence
+https://en.wikipedia.org/wiki/Corona
+https://en.wikipedia.org/wiki/Solar_eclipse_of_May_20,_2012
+https://en.wikipedia.org/wiki/Solar_eclipse_of_October_23,_2014
+https://en.wikipedia.org/wiki/Earth
+https://en.wikipedia.org/wiki/Eclipse
+
+
+These are the first 10 URLs of the DGS
+https://en.wikipedia.org/wiki/Solar_eclipse
+https://en.wikipedia.org/wiki/Eclipse_of_the_Sun_(film)
+https://en.wikipedia.org/wiki/Luis_Saslavsky
+https://en.wikipedia.org/wiki/Argentina
+https://en.wikipedia.org/wiki/Argentina_(disambiguation)
+https://en.wikipedia.org/wiki/Argentina,_Santiago_del_Estero
+https://en.wikipedia.org/wiki/Strasbourg
+https://en.wikipedia.org/wiki/Argentina_(river)
+https://en.wikipedia.org/wiki/Argentina_(plant)
+https://en.wikipedia.org/wiki/Argentina_(fish)
+
+The efficiency of both the DFS and BFS would be the same since both are traversal and both of them take around 30 mins to crawl the URL
+
+The coverage of the crawl topic (i.e solar eclipse) is more in DFS as compared to BFS.For instance if we match the URL for solar eclipse then around 461 matches are obtained for the word solar eclipse, whereas in the case of DFS , only 1 URL has the solar_eclipse for which is the seed URL. Therefore the BFS crawls are more relevant to the topic. 

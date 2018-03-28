@@ -1,0 +1,9 @@
+In task 2 I am doing focussed crawling using BFS.In focussed crawling I am given a set of keywords or a keyword. Starting with the seed URL "https://en.wikipedia.org/wiki/Solar_eclipse" , I perform a BFS crawl to depth 6 at most and atmost 1000 unique URLS , using the keywords.
+
+In focussed crawling I am using 2 python packages namely nltk and pyenchant.nltk is used for stemming while penchant is used as a english dictionary. 
+Here I first split the anchor text and the url. I then stem each word of the URL and the anchor text and convert it to lowercase.I also convert the keyword to lowercase and then match the word with the keyword.If the keyword matched with any of the anchor text word or the URL word then the URL is added to the list else it is ignored.Also if the word starts or ends with the keyword and the rest of the word (excluding the keyword part of the word) is in the english dictionary then that keyword is added to the url to be processed.
+
+For instance if the word is fumoon, and keyword is moon then I will first check for moon in fumoon . Since fumoon ends with moon , therefore we will then check for fu in the english dictioanry .Since fu is not in the english dictionary therefore the word fumoon would be ignored.I am using pyenchant package to check whether a word is in english dictioanry or not and nltk for stemming.
+ 
+So basically I am implementing a word de-compounding strategy.
+ 

@@ -1,0 +1,42 @@
+The Goal of the assignment is to implement a web crawler using DFS and BFS.
+
+Crawling starts with the seed URL : https://en.wikipedia.org/wiki/Solar_eclipse.
+Politeness policy has been respected by putting a delay of 1 second between crawling two url's
+
+Installations Guide : 
+-First install python on you machine using pip install python or from https://www.python.org/download/releases/2.7/
+-Install Beautiful Soup using pip install beautifulsoup4
+
+Also for focussed crawling part I am using NLTK python library.In order to install nltk using the command : 
+install sudo pip install -U nltk
+I am using the nltk library for steeming the word.
+
+Also in the focussed crawling I am using pyenchant library.In order to install pyenchant run the following command :
+pip install pyenchant
+
+
+
+In order to run the BFS crawler first install Beautiful Soup 
+
+
+I have two files for TASK1. One file is corresponding to the BFS and one file corresponding to the DFS.
+In the BFS and DFS the crawling starts from the seed url : https://en.wikipedia.org/wiki/Solar_eclipse
+
+- Also only those links which have the prefix "https://en.wikipedia.org/wiki" that lead to articles only are being followed. The administrative link is being avoided (links containing ':'). 
+- Non english articles are being avoided by checking for language as english.
+- Only the links in the content blocks are being followed.
+- Also any links containing images , formulas etc are being avoided.
+
+The maximum depth for crawling the wikipedia is kept as 6 and no more than 1000 unique URL'S are being crawled.
+- Unique URL's are being taken cared of by maintaing the list of visited URL's and checking whether the new URL is already in the visited list or not.
+
+The depth in DFS reached is 6 while the depth in BFS and focussed crawling has reached 3.
+
+
+CITATIONS : 
+
+
+1. https://www.crummy.com/software/BeautifulSoup/
+2. https://docs.python.org/2.7/tutorial/
+3. http://www.nltk.org/
+4. http://pythonhosted.org/pyenchant/
